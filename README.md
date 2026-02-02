@@ -175,7 +175,7 @@ Run tests with:
 mvn test
 ```
 
-All tests pass: ✅ 28/28
+All tests pass: ✅ 23/23
 
 ## Key Design Patterns
 
