@@ -56,6 +56,7 @@ src/main/java/com/example/
 │   └── AssignmentNode.java    # Assignment operations (=, +=, etc.)
 ├── evaluator/                 # Evaluation orchestrator
 │   └── Evaluator.java         # Coordinates lexing, parsing, evaluation
+│   └── ConsoleRunner.java     # CLI implementation (CommandLineRunner)
 ├── store/                     # Variable storage
 │   └── VariableStore.java     # Variable state management
 ├── util/                      # Tokenization layer
@@ -125,7 +126,7 @@ store.toString() → "(x=10,y=20)"
 ## Building & Running
 
 ### Prerequisites
-- Java 7+
+- Java 17+
 - Maven 3.0+
 
 ### Build
@@ -148,7 +149,7 @@ mvn test
 Run the application and enter expressions one per line:
 
 ```bash
-$ mvn exec:java -Dexec.mainClass="com.example.App"
+$ mvn spring-boot:run
 Text-based Calculator. Enter expressions (Ctrl+D or Ctrl+Z to finish):
 
 i = 0
