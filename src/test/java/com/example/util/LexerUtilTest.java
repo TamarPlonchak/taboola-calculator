@@ -4,10 +4,14 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 import com.example.lexer.Token;
 import com.example.lexer.TokenType;
 
+@SpringBootTest
+@ActiveProfiles("test")
 class LexerUtilTest {
 
     @Test

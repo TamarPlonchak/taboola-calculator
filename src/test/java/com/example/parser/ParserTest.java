@@ -2,9 +2,13 @@ package com.example.parser;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 import com.example.util.LexerUtil;
 
+@SpringBootTest
+@ActiveProfiles("test")
 class ParserTest {
 
     @Test
